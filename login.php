@@ -26,7 +26,7 @@
         if($count == 1){
             header("location: welcome.php");
         }else {
-            $error = "Your login name or passowrd is invalid";
+            header("location: error.php");
         }
     }
 
@@ -61,6 +61,11 @@
                 border: none;
                 cursor: pointer;
                 width: 100%;
+                transition: all 0.5s linear 0s;
+            }
+            
+            button:hover{
+                background-color: #ff0000;
             }
             
             .cancelbtn {
@@ -75,7 +80,7 @@
             }
             
             img.avatar {
-                width: 30%;
+                width: 15%;
                 border-radius: 50%;
             }
             
@@ -122,16 +127,14 @@
 
         <h1>Login</h1>
 
-        <h2>Login Form</h2>
-
-        <form action="">
-            <div class="imgcontainer" method="post" id="form">
+        <form action="" method="post" id="form">
+            <div class="imgcontainer">
                 <img src="images/logo2.png" alt="Avatar" class="avatar">
             </div>
 
             <div class="container">
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <input type="text" placeholder="Enter Username (Your first name)" name="uname" required>
 
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
