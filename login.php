@@ -61,11 +61,11 @@
                 border: none;
                 cursor: pointer;
                 width: 100%;
-                transition: all 0.5s linear 0s;
+                transition: all 0.3s linear 0s;
             }
             
             button:hover{
-                background-color: #ff0000;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
             }
             
             .cancelbtn {
