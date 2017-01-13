@@ -60,5 +60,11 @@ li a:visited{
 }
 
 input{
+    margin: 10px;
 	display: block;
+}
+
+label{
+    margin: 10px;
+    font-family: 'Lato', sans-serif;
 }

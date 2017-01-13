@@ -27,24 +27,20 @@
 
     <h1>Register</h1>
 
-    <form id="register">
+    
+    <form id="register" action="connect.php" method="post">
         <label>First Name</label>
-        <input type="text" name="firstname">
+        <input type="text" name="firstname" id="firstname">
         <label>Last Name</label>
-        <input type="text" name="lastname">
+        <input type="text" name="lastname" id="lastname">
         <label>email</label>
-        <input type="email" name="email">
+        <input type="email" name="email" id="email">
         <label>Password</label>
-        <input type="password" name="password">
+        <input type="password" name="password" id="password">
         <label>Message</label>
-        <textarea></textarea>
-        <input type="submit">
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" value="Send a Message">
     </form>
-
-
-
-
-
 
 </body>
 
