@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Register</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,30 +22,19 @@
         <li><a href="product.html">Products</a></li>
         <li><a href="location.html">Location</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="hide"><a href="register.html" class="active">Register</a></li>
-        <li class="hide"><a href="login.html">Login</a></li>
+        <li class="hide"><a href="register.php">Register</a></li>
+        <li class="hide"><a href="login.php" class="active">Login</a></li>
     </ul>
 
-    <h1>Register</h1>
+    <h1>Welcome</h1>
 
-    <form id="register">
-        <label>First Name</label>
-        <input type="text" name="firstname">
-        <label>Last Name</label>
-        <input type="text" name="lastname">
-        <label>email</label>
-        <input type="email" name="email">
-        <label>Password</label>
-        <input type="password" name="password">
-        <label>Message</label>
-        <textarea></textarea>
-        <input type="submit">
-    </form>
-
-
-
-
-
+    <?php
+    
+    echo "You have successfuly logged in";
+    
+    ?>
+    
+   
 
 </body>
 
