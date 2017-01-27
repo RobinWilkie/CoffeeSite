@@ -1,6 +1,8 @@
 <?php
 
     include("db.php");
+    
+    session_start();
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         
         // make connection to the database
@@ -24,6 +26,7 @@
         
         //if result matches $useranme and $password, table row must be 1 row
         if($count == 1){
+            $_SESSION['login_user'] = $myusername;
             header("location: welcome.php");
         }else {
             header("location: error.php");
@@ -64,8 +67,8 @@
                 transition: all 0.3s linear 0s;
             }
             
-            button:hover{
-                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            button:hover {
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
             }
             
             .cancelbtn {
@@ -111,6 +114,7 @@
             <ul>
                 <li class="right"><a href="register.php">Register</a></li>
                 <li class="right"><a href="login.php">Login</a></li>
+                <li class="right"><a href = "logout.php">Sign Out</a></li>
             </ul>
             <img src="images/banner.jpg" alt="picture of coffee">
         </header>
@@ -145,7 +149,7 @@
 
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
+                <span class="psw"><a href="forgotpassword.php">Forgot password?</a></span>
             </div>
         </form>
 

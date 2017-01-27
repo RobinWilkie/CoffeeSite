@@ -30,7 +30,7 @@
 
 //check if values have been added successfully otherwise give an error message
     if($conn->query($sql) === TRUE){
-        echo " New record created successfully";
+        echo " New record created successfully. <a href='login.php'>Click here to log in</a>";
     }
     else{
         echo "Error: " . $sql . "<br>" . $conn->error;

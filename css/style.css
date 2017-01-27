@@ -10,6 +10,11 @@ body{
 	src: url('customfonts/Lato-Regular.woff2');
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 h1{
 	font-family: 'Lato', sans-serif;
 	font-size: 26px;
@@ -71,15 +76,16 @@ label{
 }
 
 form {
-    border: 3px solid #f1f1f1;
+    border: 3px solid #000;
 }
 
 input[type=text], input[type=password] {
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
 }
 
@@ -128,3 +134,4 @@ span.psw {
        width: 100%;
     }
 }
+
