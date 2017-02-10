@@ -40,7 +40,7 @@
 
     <head>
         <title>Login</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="style.css">
         <style>
             form {
                 border: 3px solid #f1f1f1;
