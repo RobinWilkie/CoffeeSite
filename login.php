@@ -83,7 +83,7 @@
             }
             
             img.avatar {
-                width: 15%;
+                width: 10%;
                 border-radius: 50%;
             }
             
@@ -114,9 +114,9 @@
             <ul>
                 <li class="right"><a href="register.php">Register</a></li>
                 <li class="right"><a href="login.php">Login</a></li>
-                <li class="right"><a href = "logout.php">Sign Out</a></li>
+                <li class="right"><a href="logout.php">Sign Out</a></li>
             </ul>
-            <img src="images/banner.jpg" alt="picture of coffee">
+            <img src="images/coffeebanner.jpg" alt="picture of coffee">
         </header>
 
         <ul>

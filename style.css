@@ -32,15 +32,13 @@
         margin-left: 30px;
     }
     
-    .mainTitle {
+    #coffeelogo {
         position: absolute;
-        top: 20%;
-        left: 50%;
+        top: 10vh;
+        left: 10%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
-        color: #FFF;
-        font-size: 10rem;
-        text-shadow: 2px 2px #000;
+        width: 15vw;
     }
     
     header img {
@@ -87,6 +85,50 @@
     
     .card img {
         width: 100%;
+    }
+    
+    #homeBoxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .linkBox {
+        width: 20vw;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        margin-bottom: 20px;
+    }
+    
+    .linkBox:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .linkBox h1 {
+        font-size: 3vw;
+    }
+    
+    #aboutBox {
+        background: url("images/americano.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    
+    #shopBox {
+        background: url("images/latte.jpeg") no-repeat center center;
+        background-size: cover;
+    }
+    
+    #locationBox {
+        background: url("images/blackcoffee.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    
+    #contactBox {
+        background: url("images/espresso.jpg") no-repeat center center;
+        background-size: cover;
     }
     
     input {
@@ -319,7 +361,7 @@
         font-weight: 500;
         line-height: 20px;
     }
-    /* ------------- styles for CONTENT page ----------------- */
+    /* ------------- styles for CONTACT page ----------------- */
     
     #contactForm {
         width: 100%;
@@ -343,7 +385,6 @@
         padding: 15px 5px;
         width: 100%;
         height: 10%;
-        border-radius: 0px;
     }
     
     #contact input[type=email] {
@@ -363,12 +404,17 @@
         cursor: pointer;
         border-radius: 4px;
         transition: all 0.5s ease-in-out 0s;
+        font-size: 18px;
     }
     
     #contact input[type=submit]:hover {
         background-color: #FFF;
         color: #4CAF50;
         border: 2px solid #4CAF50;
+    }
+    
+    #contact img {
+        width: 5vw;
     }
     /* ------------- styles for mobile view ----------------- */
     
@@ -401,6 +447,15 @@
         .mainTitle {
             font-size: 2em;
         }
+        .linkBox {
+            width: 95vw;
+        }
+        .linkBox h1 {
+            font-size: 15vw;
+        }
+        #homeBoxes {
+            flex-direction: column;
+        }
     }
     
     @media only screen and (max-width: 1200px) {
@@ -422,4 +477,16 @@
         .mainTitle {
             font-size: 5em;
         }
+    }
+    
+    #thanks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #thanks a {
+        text-decoration: underline;
     }

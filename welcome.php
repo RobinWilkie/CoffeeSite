@@ -10,7 +10,7 @@
         <title>Welcome</title>
         <link rel="stylesheet" href="style.css">
         <style>
-            .signout{
+            .signout {
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -19,7 +19,7 @@
                 padding: 5px 10px;
             }
             
-            .signout a{
+            .signout a {
                 color: #fff;
                 font-family: 'Lato', sans-serif;
             }
@@ -34,7 +34,7 @@
                 <li class="right"><a href="logout.php">Sign Out</a></li>
 
             </ul>
-            <img src="images/banner.jpg" alt="picture of coffee">
+            <img src="images/coffeebanner.jpg" alt="picture of coffee">
         </header>
 
         <ul>

@@ -15,9 +15,9 @@
             <li class="right"><a href="login.php">Login</a></li>
         </ul>
 
-        <h1 class="mainTitle">COFFEE</h1>
+        <img id="coffeelogo" src="images/coffeelogo.png" alt="logo for the coffee shop">
 
-        <img id="slide" src="images/banner.jpg" alt="picture of coffee">
+        <img id="slide" src="images/coffeemain1.jpg" alt="picture of coffee">
     </header>
 
     <ul>
@@ -32,17 +32,39 @@
 
     <h1>Home</h1>
 
+    <div id="homeBoxes">
+        <a href="about.html">
+            <div id="aboutBox" class="linkBox">
+                <h1>ABOUT</h1>
+            </div>
+        </a>
+        <a href="shop.html">
+            <div id="shopBox" class="linkBox">
+                <h1>SHOP</h1>
+            </div>
+        </a>
+        <a href="location.html">
+            <div id="locationBox" class="linkBox">
+                <h1>LOCATION</h1>
+            </div>
+        </a>
+        <a href="contact.html">
+            <div id="contactBox" class="linkBox">
+                <h1>CONTACT</h1>
+            </div>
+        </a>
+    </div>
+
 
     <script>
         var i = 0;
         var ListOfImages = new Array();
 
-        ListOfImages[0] = "images/banner3.jpg";
-        ListOfImages[1] = "images/banner4.jpg";
-        ListOfImages[2] = "images/image-2.jpg";
-        ListOfImages[3] = "images/image-8.gif";
-        ListOfImages[4] = "images/image-6.jpg";
-        ListOfImages[5] = "images/banner.jpg";
+        ListOfImages[0] = "images/coffeemain1.jpg";
+        ListOfImages[1] = "images/coffeemain2.jpg";
+        ListOfImages[2] = "images/coffeemain3.jpg";
+        ListOfImages[3] = "images/coffeemain4.jpg";
+        ListOfImages[4] = "images/coffeemain5.jpg";
 
         function swapImages() {
             document.getElementById('slide').src = ListOfImages[i];

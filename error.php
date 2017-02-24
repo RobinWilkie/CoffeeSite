@@ -12,7 +12,7 @@
             <li class="right"><a href="register.html">Register</a></li>
             <li class="right"><a href="login.html">Login</a></li>
         </ul>
-        <img src="images/banner.jpg" alt="picture of coffee">
+        <img src="images/coffeebanner.jpg" alt="picture of coffee">
     </header>
 
     <ul>

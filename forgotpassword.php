@@ -87,7 +87,7 @@
                 <li class="right"><a href="logout.php">Sign Out</a></li>
 
             </ul>
-            <img src="images/banner.jpg" alt="picture of coffee">
+            <img src="images/coffeebanner.jpg" alt="picture of coffee">
         </header>
 
         <ul>
